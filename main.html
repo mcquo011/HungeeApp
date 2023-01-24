@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="./assets/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Kanit:wght@300&family=Permanent+Marker&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half">
+         <div class="field has-addons">
+            <p class="control has-icons-left">
+              <input class="input" type="text" placeholder="Search Ingredients">
+            </p>
+            <p class="control">
+              <button id="search" type="submit" class="button is-danger">
+                search
+              </button>
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section">
+<div class="container">
+    <title class="title has-text-centered is-size-4">Recipes</title>
+    <div class="columns mt-5 is-8 is-variable">
+        <div class="column is-4-tablet is-3-desktop">
+            <div class="card">
+                <figure class="image card-image has-text-centered">
+                    <img class="image is-fullwidth" src="" alt="">
+                </figure>
+                <div class="card-content">
+                    <p id="title" class="title is-size-5">Title</p>
+                    <p class="calories">Calories:</p>
+                    <p class="nutrition">Nutrition Label:</p>
+                    
+                </div>
+                <footer class="card-footer">
+                     <p class="card-footer-item">
+                    <select class="select is-fullwidth">
+                        <option>Ingredients</option>
+                        <option class="ingredients"></option>
+                    </select>
+                      </p>
+                </footer>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+</body>
+<script src="./assets/script.js"></script>
+</html>
