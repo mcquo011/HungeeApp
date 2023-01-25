@@ -1,0 +1,28 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+ body {
+    background-color: #EB0523;
+    font-family: 'Dosis', sans-serif;
+   
+ }
+
+ header {
+    text-align: center;
+    width: auto;
+}
+
+.hero-card {
+    background-color: white;
+    text-align: center;
+    box-shadow: 10px 10px 15px black;
+  }
+  
+
+#map {
+    height: 90vh;
+    width: 90vw; 
+    margin: auto;
+    width: 90%;
+    padding-top: 20px;
+    padding: 10px;
+}
