@@ -11,13 +11,53 @@ body {
 
 }
 
+.conatiner {
+    display: flex;
+}
+
+.card-title {
+     text-align: center;
+  box-shadow: 10px 10px 15px black;
+  transition: transform .2s;
+  background-color: white;
+}
+
 .card {
   text-align: center;
   box-shadow: 10px 10px 15px black;
   transition: transform .2s;
+   width: 300px;
+    height: 450px;
+}
+
+.card-footer-item{
+    height: 100px; /* or any desired value */
+    width: 100%; /* to make it span the full width of the page */
+    position: absolute;
+    bottom: 0;
+}
+.select{
+   
+    right: 0px; /* or any desired value */
+    bottom: 0px; /* or any desired value */
+    width: 50%;
+}
+
+.title {
+    font-size: 15px;
+}
+
+#title {
+    font-size: 10px;
 }
 
 .card:hover {
+  -ms-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+.card-title:hover {
   -ms-transform: scale(1.25);
   -webkit-transform: scale(1.25);
   transform: scale(1.25);
