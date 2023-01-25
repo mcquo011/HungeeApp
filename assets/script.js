@@ -16,9 +16,10 @@ fetch(APIurl)
     return response.json();
   })
   .then(function (data) {
+    console.log(data.hits)
     const recipes = data.hits;
     for (let i = 0; i < recipes.length; i++) {
-      const cardTitle = document.querySelectorAll(".title")[i];
+      const cardTitle = document.querySelectorAll("#title")[i];
       const cardCalories = document.querySelectorAll(".calories")[i];
       const cardNutrition = document.querySelectorAll(".nutrition")[i]; 
       const cardImage = document.querySelectorAll(".image img")[i];
