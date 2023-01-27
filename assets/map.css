@@ -1,10 +1,22 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+.background {
+  background-color: #EB0523;
+}
+ html {
+    background-color: #EB0523;
+ }
 
  body {
-    background-color: #EB0523;
-    font-family: 'Dosis', sans-serif;
-   
+  font-family: 'Dosis', sans-serif;
  }
+
+ .map-container {
+text-align: center;
+color: white;
+font-size: 30px;
+padding: 0;
+margin: 0;
+}
 
  header {
     text-align: center;
@@ -16,13 +28,17 @@
     text-align: center;
     box-shadow: 10px 10px 15px black;
   }
-  
 
 #map {
-    height: 90vh;
+    height: 75vh;
     width: 90vw; 
     margin: auto;
     width: 90%;
-    padding-top: 20px;
-    padding: 10px;
+    align-self: flex-end;
+}
+
+.map-background {
+  background-color: #EB0523;
+  height: 100vh;
+  width: 100vw;
 }
