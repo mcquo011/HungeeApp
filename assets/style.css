@@ -50,7 +50,9 @@ body {
     margin: auto;
     margin-bottom: 0px;
 }
-
+.link {
+  align-self: flex-end;
+}
 .box {
     width: 50%;
     align-items: center;
@@ -86,8 +88,8 @@ body {
 }
 
 .field.has-addons {
-  height: 10vh;
-  width: 25vw;
+  height: 75px;
+  width: 350px;
   border-radius: 5px;
   background-color: #EBBE34;
   display: flex;
