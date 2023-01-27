@@ -1,5 +1,6 @@
-mapboxgl.accessToken =
-  "pk.eyJ1IjoibWNxdW8wMTEiLCJhIjoiY2xkOWtjMHptMDltcTNvcXA5ZzMwajRuNSJ9.WCNtQ1mI_VhpHUAcRPZj_A";
+mapboxgl.accessToken = "pk.eyJ1IjoibWNxdW8wMTEiLCJhIjoiY2xkOWtjMHptMDltcTNvcXA5ZzMwajRuNSJ9.WCNtQ1mI_VhpHUAcRPZj_A";
+
+
 
 navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
   enableHighAccuracy: true,
@@ -17,7 +18,7 @@ function errorLocation() {
 function setupMap(center) {
   let map = new mapboxgl.Map({
     container: "map",
-    style: "mapbox://styles/mapbox/streets-v11",
+    style: "mapbox://styles/carisseb/clddu22ol003r01qnzl3eh0yk",
     center: center,
     zoom: 15,
   });
