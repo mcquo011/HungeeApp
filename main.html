@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HUNGEE</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="./assets/style.css">
 
@@ -17,6 +17,22 @@
 <div class="card-title is-center is-size-1">
   <p>HUNGEE!</p>
 </div>
+
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Try Again!</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <p>Please enter atleast one ingredient in the search bar to see recipes.</p>
+    </section>
+     <footer class="modal-card-foot">
+    </footer>
+  </div>
+</div>
+
 
 <section class="section is-centered">
   <div class="container is-centered">
@@ -34,6 +50,17 @@
     </div>
   </div>
 </section>
+
+
+<div id="mySidebar" class="sidebar">
+  <a  class="closebtn" onclick="toggleNav()">&times;</a>
+</div>
+
+<div id="main">
+  <button class="openbtn hidden" onclick="toggleNav()">&#9776; See your favorite recipes</button>
+  <button class="hidden clearHistory button">Clear History & Start Over</button>
+</div>
+
 
 <section class="section">
 <div class="container">

@@ -5,6 +5,11 @@ const ingredients = document.querySelector(".ingredients");
 const image = document.querySelector(".image");
 const title = document.querySelector("#title");
 const nutrition = document.querySelector(".nutrition");
+const clearHistory = document.querySelector(".clearHistory")
+const clearSeach = document.querySelector(".link")
+const searchInput = document.querySelector("#search-input")
+const modal = document.querySelector(".modal")
+const link = document.querySelector(".link")
 const API_id = "cf07f1f8";
 const API_key = "27e126a985485dda204f30a5e04158f8";
 
@@ -65,9 +70,89 @@ fetch(APIurl)
 
 search.addEventListener("click", function (event) {
   event.preventDefault();
-  // Hide all cards
+
+ if (!searchInput.value) {
+   modal.classList.add("is-active");
+   const closeButton = document.querySelector(".delete");
+   closeButton.addEventListener("click", () => {
+     modal.classList.remove("is-active");
+   });
+ }
+ 
+  const historyBtn = document.querySelector(".openbtn");
+  historyBtn.classList.remove("hidden");
+  clearHistory.classList.remove("hidden")
+
   const cards = document.querySelectorAll(".card");
   cards.forEach((card) => card.classList.remove("hidden"));
   searchQuery = document.querySelector("input").value;
   getRecipe();
 });
+
+
+const images = document.querySelectorAll(".image img");
+images.forEach((image) => {
+  image.addEventListener("click", (event) => {
+    const url = event.target.parentElement.href;
+
+    let urls = localStorage.getItem("urls");
+    if (urls) {
+      urls = JSON.parse(urls);
+    } else {
+      urls = [];
+    }
+
+    if (!urls.includes(url)) {
+    urls.push(url);
+
+    localStorage.setItem("urls", JSON.stringify(urls));
+
+    addUrlsToSidebar(); 
+    }
+
+    
+  });
+});
+
+
+function addUrlsToSidebar() {
+  const sidebar = document.querySelector("#mySidebar");
+
+
+  let urls = localStorage.getItem("urls");
+  if (urls) {
+    urls = JSON.parse(urls);
+    
+ sidebar.innerHTML = "";
+   
+    urls.forEach((url) => {
+      const link = document.createElement("a");
+      link.href = url;
+      link.innerHTML = url; 
+      link.classList.add("link")
+      sidebar.appendChild(link);
+    });
+   
+  }
+}
+
+addUrlsToSidebar();
+
+
+clearHistory.addEventListener("click", function(){
+      localStorage.clear(); 
+        location.reload()
+})
+
+link.addEventListener("click", function(){
+    window.location.assign("map.html")
+})
+
+function toggleNav() {
+  let sidebar = document.getElementById("mySidebar");
+  if (sidebar.style.width === "275px") {
+    sidebar.style.width = "0";
+  } else {
+    sidebar.style.width = "275px";
+  }
+}
