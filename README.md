@@ -14,6 +14,17 @@ Another big challenge was trying to figure out how to implement the use of "loca
 
 Oddly enough, most of what we learned had to do with styling.  While the parsing of the JSON we received was somewhat-new, we had done a previous project doing basically the same thing, but instead of fetching information for 5 cards, we're doing it for 10 now.  The other similarity was between creating "hidden" and "non-hidden" classes and manipulating whether a card is displayed or not - we've never worked with it on this scale before, however it was very similar to what we did in our JS quizes previously.  As a result of our newest learning, all of us have dramatically increased our CSS knowledge, while also buttressing and reinforcing our current working knowledge of JavaScript and HTML.
 
+## Built with:
+- HTML
+- CSS
+- JavaScript
+- JSON
+- Bulma
+- Mapbox Temporary Geocoding API
+- Mapbox Directions API
+- Edamom Recipe Search API
+- Github
+
 ## Screenshots
 <img width="1416" alt="Hungee Opening Page" src="https://user-images.githubusercontent.com/118499830/215648468-ab767bb0-4784-4c54-832c-b2ed45c67c0e.png">
 <img width="1416" alt="Hungee Search Page" src="https://user-images.githubusercontent.com/118499830/215648485-3576f018-dea7-4165-8278-a9d14185c243.png">
