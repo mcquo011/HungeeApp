@@ -78,11 +78,31 @@ a {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .title {
-    font-size: 15px;
+  font-size: 15px;
+}
+
+.instructions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 50%;
+  width: 50%;
+  background-color: hsl(350, 77%, 88%);
+  border-radius: 3px;
+  padding: 18px;
+  box-shadow: 10px 10px 15px black;
+  color: rgb(47, 2, 2);
+}
+
+.instructions:hover {
+   -ms-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
 }
 
 .img-border {
@@ -197,6 +217,11 @@ a {
 
 }
 
+#instruction {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
@@ -233,7 +258,19 @@ a {
   margin-left: 0.5em;
 }
 
-
+.instructions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 50%;
+  width: 75%;
+  background-color: hsl(350, 77%, 88%);
+  border-radius: 3px;
+  padding: 18px;
+  box-shadow: 10px 10px 15px black;
+  color: rgb(47, 2, 2);
+}
 
 }
 

@@ -10,6 +10,7 @@ const clearSeach = document.querySelector(".link")
 const searchInput = document.querySelector("#search-input")
 const modal = document.querySelector(".modal")
 const link = document.querySelector(".link")
+const instruction = document.querySelector(".instructions");
 const API_id = "cf07f1f8";
 const API_key = "27e126a985485dda204f30a5e04158f8";
 
@@ -78,7 +79,8 @@ search.addEventListener("click", function (event) {
      modal.classList.remove("is-active");
    });
  }
- 
+   instruction.classList.add("hidden");
+
   const historyBtn = document.querySelector(".openbtn");
   historyBtn.classList.remove("hidden");
   clearHistory.classList.remove("hidden")
