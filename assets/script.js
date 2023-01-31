@@ -123,7 +123,7 @@ function addUrlsToSidebar() {
   if (urls) {
     urls = JSON.parse(urls);
     
- sidebar.innerHTML = "";
+ sidebar.textContent = "";
    
     urls.forEach((url) => {
       const link = document.createElement("a");
