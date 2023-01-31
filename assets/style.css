@@ -19,6 +19,18 @@ a {
     font-size: 20px;
 }
 
+.top {
+  position: relative;
+  z-index: 2;
+}
+
+.bottom {
+  position: relative;
+  z-index: 1;
+  margin-top: 50px;
+}
+
+
 .card-title {
      text-align: center;
   box-shadow: 5px 5px 10px black;
@@ -35,7 +47,7 @@ a {
 }
 
 .card-footer {
-    height: 90%;
+    height: 25%;
     width: 100%;
 }
 
@@ -220,6 +232,7 @@ a {
   box-shadow: 10px 10px 15px black;
   margin-left: 0.5em;
 }
+
 
 
 }
