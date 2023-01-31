@@ -1,9 +1,7 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
-.background {
-  background-color: #EB0523;
-}
+
  html {
-    background-color: #EB0523;
+    background-color: hsl(348, 91%, 51%);
  }
 
  body {
@@ -15,7 +13,7 @@ text-align: center;
 color: white;
 font-size: 30px;
 padding: 0;
-margin: 0;
+margin: 20px;
 }
 
  header {
@@ -29,6 +27,20 @@ margin: 0;
     box-shadow: 10px 10px 15px black;
   }
 
+  .startOver {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 10%;
+    background-color: #ebeae8;
+    border: none;
+    color: rgb(241, 50, 50);
+    font-weight: bolder;
+    box-shadow: 5px 5px 10px black;
+
+  }
+
+  
+
 #map {
     height: 75vh;
     width: 90vw; 
@@ -41,4 +53,17 @@ margin: 0;
   background-color: #EB0523;
   height: 100vh;
   width: 100vw;
+}
+
+@media screen and (max-width: 650px) {
+   .startOver {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 25%;
+    background-color: #ebeae8;
+    border: none;
+    color: rgb(241, 50, 50);
+    font-weight: bolder;
+
+  }
 }
